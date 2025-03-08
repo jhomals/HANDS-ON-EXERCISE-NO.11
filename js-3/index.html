@@ -3,19 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Exercise 3</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .result span {
+            font-weight: bold;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Array in JS</h1>
-    <label for="numInpt">Insert a number: </label>
-    <input type="number" id="numInpt"><br><br>
-    <button onClick="insertEl()">Insert</button>
-    <button onClick="deleteAll()">Delete</button>
-    <p style="font-weight: bold;">Numbers:</p>
-    <p id="elements"></p>
-    <p>Sum: <span id="sum"></span></p>
-    <p>Highest: <span id="highest"></span></p>
-    <p>Lowest: <span id="Lowest"></span></p>
-    <script src="main.js"></script>
+
+    <h2>JS Exercise 3</h2>
+    <label for="numberInput">Enter a Number:</label>
+    <input type="number" id="numberInput"><br><br>
+    <button id="insertBtn">Insert</button>
+    <button id="deleteBtn">Delete All</button>
+
+    <h3>Numbers:</h3>
+    <ul id="numberList"></ul>
+
+    <p class="result">Sum: <span id="sum" style="color:blue;">0</span></p>
+    <p class="result">Highest: <span id="highest" style="color:green;">0</span></p>
+    <p class="result">Lowest: <span id="lowest" style="color:red;">0</span></p>
+
+    <script src="main.js" defer></script>
+
 </body>
 </html>
+
